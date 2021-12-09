@@ -41,6 +41,18 @@ This program includes a config.json file which can be used to alter the program.
 
 "news" refers to the parameters used for the NewsAPI, valid parameters can be found [here](https://newsapi.org/docs). "interval" being the time between automated updates.
 
+```json
+
+"news": 
+    {
+        "keywords":"covid coronavirus COVID-19",
+        "language": "en",
+        "sortBy":"publishedAt",
+        "api key": "9276ffd05cb4487980d806b50a365674",
+        "interval": 1200
+    }
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
