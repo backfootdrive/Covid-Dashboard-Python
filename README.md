@@ -26,8 +26,7 @@ Scheduled events can be cancelled, with the event being removed from the schedul
 
 ## Configuration
 
-This program includes a config.json file which can be used to alter the program.
-"data" refers to the parameters for the uk-covid19 API, valid parameters can be found [here](https://coronavirus.data.gov.uk/details/developers-guide/main-api#query-parameters).
+This program includes a config.json file which can be used to alter the program. "data" refers to the parameters for the uk-covid19 API, valid parameters can be found [here](https://coronavirus.data.gov.uk/details/developers-guide/main-api#query-parameters). "interval" being the time between automated updates.
 
 ```json
 
@@ -39,6 +38,8 @@ This program includes a config.json file which can be used to alter the program.
         "interval": 300
     }
 ```
+
+"news" refers to the parameters used for the NewsAPI, valid parameters can be found [here](https://newsapi.org/docs). "interval" being the time between automated updates.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
