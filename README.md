@@ -12,7 +12,7 @@ To install, download and unzip the repository to your desired location.
 
 ## Running
 
-To run the dashboard double click the 'main.py' file. It will run on your localhost, [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+To run the dashboard double click the 'main.py' file. It will run on your localhost, [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 *Requires python 3.7+ to be installed.
 
