@@ -24,6 +24,19 @@ Articles can be removed and removed articles will not be seen again until the pr
 
 Scheduled events can be cancelled, with the event being removed from the scheduler.
 
+## Configuration
+
+'''json
+
+"data": 
+    {
+        "AreaName": "Exeter",
+        "AreaType": "ltla",
+        "NationName": "England",
+        "interval": 300
+    }
+'''
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
