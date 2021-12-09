@@ -1,0 +1,18 @@
+{
+    "data": 
+    {
+        "AreaName": "Exeter",
+        "AreaType": "ltla",
+        "NationName": "England",
+        "interval": 300
+    }, 
+    "news": 
+    {
+        "keywords":"covid coronavirus COVID-19",
+        "language": "en",
+        "sortBy":"publishedAt",
+        "api key": "9276ffd05cb4487980d806b50a365674",
+        "interval": 1200
+    },
+    "favicon":"https://icons.iconarchive.com/icons/avosoft/warm-toolbar/16/world-icon.png"
+}
