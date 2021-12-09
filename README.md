@@ -8,13 +8,13 @@ Scheduled events can be cancelled, with the event being removed from the schedul
 
 ## Installation
 
-To download and unzip the repository to your desired location.
+To install, download and unzip the repository to your desired location.
 
 ## Running
 
 To run the dashboard double click the 'main.py' file.
 
-*Requires python to be installed
+*Requires python 3.7+ to be installed
 
 ## Usage
 
