@@ -1,6 +1,6 @@
 #start
 #API Key: 9276ffd05cb4487980d806b50a365674
-import requests, datetime, json, logging
+import requests, datetime, json, logging, time, sched
 
 
 articles = []
@@ -17,18 +17,21 @@ fh.setFormatter(formatter)
 logger.addHandler(fh)
 logger.propagate = False
 
-def update_news(update_interval: int,update_name,scheduler,config):
+def update_news(update_name, update_interval=1200,scheduler=sched.scheduler(time.time, time.sleep),config=None):
     '''Function to update news with a designated interval adding it to the scheduler
      and returning the scheduler'''
-    event = scheduler.enter(update_interval,2,update_name, argument=(config['keywords'],
-                                                             config['language'],
-                                                             config['sortBy'],
-                                                             config['api key'],))
+    if config == None:
+        event = scheduler.enter(update_interval,2,news_API_request)
+    else:
+        event = scheduler.enter(update_interval,2,update_name, argument=(config['keywords'],
+                                                                config['language'],
+                                                                config['sortBy'],
+                                                                config['api key'],))
     return scheduler, event
 
 
 
-def news_api_request(covid_terms='covid coronavirus COVID-19',
+def news_API_request(covid_terms='covid coronavirus COVID-19',
                      language='en',
                      sortBy='publishedAt',
                      api_key='9276ffd05cb4487980d806b50a365674') -> list:
