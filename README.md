@@ -51,11 +51,12 @@ This program includes a config.json file which can be used to alter the program.
         "api key": "9276ffd05cb4487980d806b50a365674",
         "interval": 1200
     }
+
 ```
 
 The favicon for the webpage can also be changed, it must be a  16x16 image.
 
-```
+```json
 "favicon":"https://icons.iconarchive.com/icons/avosoft/warm-toolbar/16/world-icon.png"
 ```
 
