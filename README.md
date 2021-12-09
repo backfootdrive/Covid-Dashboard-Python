@@ -26,6 +26,9 @@ Scheduled events can be cancelled, with the event being removed from the schedul
 
 ## Configuration
 
+This program includes a config.json file which can be used to alter the program.
+"data" refers to the parameters for the uk-covid19 API, valid parameters can be found [here](https://coronavirus.data.gov.uk/details/developers-guide/main-api#query-parameters).
+
 ```json
 
 "data": 
