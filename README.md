@@ -5,6 +5,13 @@ The Dashboard allows for scheduling manual updates as well as automatic updates 
 Articles can be removed and removed articles will not be seen again until the program is rebooted.
 Scheduled events can be cancelled, with the event being removed from the scheduler.
 
+## Dependencies
+
+- Requires python 3.7+ to be installed.
+- Requires Flask module.
+- Requires uk-covid19 module.
+- Requires Requests module.
+
 
 ## Installation
 
