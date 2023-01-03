@@ -15,6 +15,9 @@ To install, download and unzip the repository to your desired location.
 To run the dashboard double click the 'main.py' file. It will run on your localhost, [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
 
 *Requires python 3.7+ to be installed.
+*Requires Flask module.
+*Requires uk-covid19 module.
+*Requires Requests module.
 
 ## Usage
 
