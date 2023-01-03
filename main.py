@@ -23,6 +23,11 @@ fh.setFormatter(formatter)
 logger.addHandler(fh)
 logger.propagate = False
 
+# imports config settings
+logger.info('Getting Config Settings From Config File')
+f = open('config.json','r')
+config = json.load(f)
+f.close()
 
 @app.route('/')
 def url_redirect():
@@ -231,11 +236,6 @@ def manual_schedule_update(update: str) -> None:
 if __name__ == '__main__':
 
     logger.info('Starting The Program...')
-    #imports config settings
-    logger.info('Getting Config Settings From Config File')
-    f = open('config.json','r')
-    config = json.load(f)
-    f.close()
 
     #updating both news and covid data before launching dashboard
     s, events = update_data(3,1,s)
