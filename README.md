@@ -8,9 +8,9 @@ Scheduled events can be cancelled, with the event being removed from the schedul
 ## Dependencies
 
 - Requires python 3.7+ to be installed.
-- Requires Flask module.
-- Requires uk-covid19 module.
-- Requires Requests module.
+- Requires [Flask](https://pypi.org/project/Flask/) module.
+- Requires [uk-covid19](https://publichealthengland.github.io/coronavirus-dashboard-api-python-sdk/pages/getting_started.html#installation) module.
+- Requires [Requests](https://pypi.org/project/requests/) module.
 
 
 ## Installation
