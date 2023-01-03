@@ -4,10 +4,7 @@ from flask import Flask, render_template, redirect, request
 import covid_data_handler as data
 import covid_news_handling as news
 
-auto_updates = [{'name': 'Data','interval': config['data']['interval'],'event': ['']},
-                {'name': 'News','interval': config['news']['interval'],'event': ['']}]
-updates = []
-    
+
 s = sched.scheduler(time.time, time.sleep)
 app = Flask(__name__)
 
@@ -28,6 +25,10 @@ logger.info('Getting Config Settings From Config File')
 f = open('config.json','r')
 config = json.load(f)
 f.close()
+
+auto_updates = [{'name': 'Data','interval': config['data']['interval'],'event': ['']},
+                {'name': 'News','interval': config['news']['interval'],'event': ['']}]
+updates = []
 
 @app.route('/')
 def url_redirect():
